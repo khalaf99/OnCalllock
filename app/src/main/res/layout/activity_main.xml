@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context="com.example.khalaf.oncalllock.MainActivity">
+
+
+    <EditText
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:id="@+id/Password"
+        android:layout_centerInParent="true"
+        android:hint ="Enter password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:id="@+id/oldpassword"
+        android:layout_above="@+id/Password"
+        android:hint ="Enter old password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"/>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp">
+
+        <Button
+            android:id="@+id/savepassword"
+            style="@style/bluebutton"
+            android:layout_weight="1"
+            android:text="save"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/exit"
+            style="@style/bluebutton"
+            android:layout_weight="1"
+            android:text="Exit" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/changepassword"
+        style="@style/bluebutton"
+        android:layout_weight="1"
+        android:text="Change Password"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
