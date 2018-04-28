@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText SetPass, etOldpassword;
     private LinearLayout linearpassword;
 
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
